@@ -1,0 +1,249 @@
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&family=Varela+Round&display=swap');
+
+ /* .template {
+
+    max-width: 1024px;
+ } */
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .font {
+     font-family: 'Ubunto', monospace
+ }
+
+ nav ul {
+     font-size: 15px;
+     color: white;
+     list-style-type: none;
+     display: flex;
+     align-items: center;
+     background-color: #000000;
+     height: 55px;
+ }
+
+ nav ul li {
+     padding: 0 12px;
+ }
+
+ .brand img {
+     width: 44px;
+     padding: 0 8px;
+ }
+
+ .brand {
+     display: flex;
+     align-items: center;
+     font-size: 20px;
+     font-weight: bold;
+
+ }
+
+ .container {
+     min-height: 82vh;
+     background: url(back.jpg) no-repeat center center fixed;
+     background-size: auto;
+     margin: 10px 20xp;
+     display: flex;
+     margin: 15px 117px;
+     background-size: 100%;
+     border-radius: 10px;
+     font-family: 'Varela Round', sans-serif;
+     color: white;
+ }
+
+
+
+ .music {
+     cursor: pointer;
+     background: black;
+     position: sticky;
+     bottom: 0;
+     height: 63px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     flex-direction: column;
+
+
+
+ }
+
+ .audio {
+     margin-top: 10px;
+     font-size: 25px;
+ }
+
+ .music input {
+     cursor: pointer;
+     width: 83%;
+     height: 6px;
+ }
+
+ .songlist h1 {
+     margin: 19px 0px 27px 30px;
+     font-size: 23px;
+ }
+
+ .first {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 32%;
+     background: #00000038;
+     padding-right: 33px;
+     border-radius: 24px;
+     margin-top: 13px;
+     margin-left: 28px;
+     padding: 5px 13px;
+ }
+
+ .first img {
+     width: 8%;
+     border-radius: 35px;
+ }
+
+ .first #time {
+     font-size: 13px;
+ }
+
+ .first .walle {
+     font-size: 23px;
+     cursor: pointer;
+ }
+
+ .songinfo {
+     margin-top: 15px;
+     position: absolute;
+     left: 120px;
+     bottom: 23px;
+     font-size: 15px;
+     font-family: 'Varela Round', sans-serif;
+
+ }
+
+ .songinfo img {
+     opacity: 0;
+     transition: opacity 0.3s ease-in;
+ }
+
+ #gif {
+     margin-right: 10px;
+ }
+
+ .repeat {
+     position: absolute;
+     right: 145px;
+     font-size: 20px;
+     margin-top: 12px;
+ }
+
+ @media (min-width:769px) and (max-width:1023px) {
+     .container {
+         background-size: 148vh;
+     }
+
+     .first {
+         width: 50%;
+     }
+
+     .songinfo {
+         left: 73px;
+
+         bottom: 14px;
+     }
+ }
+
+ @media (min-width:481px) and (max-width:768px) {
+     .container {
+         min-height: 84vh;
+         background-size: 128vh;
+         margin: 2px 15px 7px 15px;
+     }
+
+     .first {
+
+         width: 59%;
+     }
+
+     .songinfo {
+         left: 73px;
+
+         bottom: 14px;
+     }
+     #anothertime{
+        position: absolute;
+             
+        right: 34px;
+    }
+ }
+
+ @media (min-width:320px) and (max-width:480px) {
+     .songlist h1 {
+         font-size: 13px;
+     }
+
+     .container {
+         min-height: 84vh;
+
+         background-size: 130vh;
+         margin: 10px 0px;
+     }
+
+     .first {
+         width: 79%;
+         font-size: 14px;
+     }
+
+     .songinfo {
+        top: 13px;
+         left: 13px;
+         bottom: 14px;
+         font-size: 11px;
+         height: 32px;
+         margin-top: 10px;
+        }
+        .songinfo img{
+            width: 10%;
+        }
+
+     #anothertime{
+              font-size: 15px;
+         right: 43px;
+     }
+ }
+ @media (min-width:200px) and (max-width:319px){
+    .container{
+        margin: 10px 13px;
+background-size: 130vh;
+    }
+    .songlisth1{
+      font-size: 15px;
+    }
+    .first {
+        width: 79%;
+        font-size: 14px;
+    }
+    .songinfo {
+        top: 15px;
+        left: 28px;
+        bottom: 14px;
+        
+        height: 32px;
+        
+       }
+       #mastersong{
+        display: none;
+       }
+       #anothertime{
+    font-size: 12px;
+        right: 25px;
+    }
+ }
+ .time {
+     position: absolute;
+     right: 127px;
+ }
